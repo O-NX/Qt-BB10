@@ -1,0 +1,14 @@
+prefix=/home/owner/qnx/qt52
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 QmlDevTools
+Description: Qt QmlDevTools module
+Version: 5.2.2
+Libs: -L${libdir} -lQt5QmlDevTools 
+Libs.private: -L/home/owner/qnx/qt52/lib -lQt5Bootstrap -lpthread   
+Cflags: -I${includedir}/QtQmlDevTools -I${includedir}
+Requires: Qt5Bootstrap
+

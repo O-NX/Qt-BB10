@@ -1,0 +1,14 @@
+prefix=/home/owner/qnx/qt52
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 WebKitWidgets
+Description: Qt WebKitWidgets module
+Version: 5.2.2
+Libs: -L${libdir} -lQt5WebKitWidgets 
+Libs.private: -L/home/owner/bbndk/target_10_3_1_995/qnx6/armle-v7/lib -L/home/owner/bbndk/target_10_3_1_995/qnx6/armle-v7/usr/lib -L/home/owner/qnx/qt52/lib -lQt5WebKit -L/home/owner/qnx/qt52/lib -lQt5Widgets -lQt5Network -lsocket -lQt5Gui -lQt5Core -lm -lbps -lQt5Quick -L/home/owner/bbndk/target_10_3_1_995/qnx6/armle-v7/lib -L/home/owner/bbndk/target_10_3_1_995/qnx6/armle-v7/usr/lib -L/home/owner/qnx/qt52/lib -lQt5MultimediaWidgets -lQt5OpenGL -lQt5PrintSupport -lQt5WebKit -lQt5Qml -lQt5Multimedia -lQt5Widgets -lQt5Sql -lQt5Network -lsocket -lQt5Gui -lQt5Sensors -lQt5Core -lm -lbps -lGLESv2 -lEGL  
+Cflags: -I${includedir}/QtWebKitWidgets -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Sensors Qt5MultimediaWidgets Qt5Network Qt5Widgets Qt5Quick Qt5PrintSupport Qt5OpenGL Qt5WebKit
+

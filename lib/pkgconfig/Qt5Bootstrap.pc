@@ -1,0 +1,13 @@
+prefix=/home/owner/qnx/qt52
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Bootstrap
+Description: Qt Bootstrap module
+Version: 5.2.2
+Libs: -L${libdir} -lQt5Bootstrap 
+Libs.private: -lpthread   
+Cflags: -I${includedir}/QtBootstrap -I${includedir}
+
